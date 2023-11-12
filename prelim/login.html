@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="index.html">
+    
+</head>
+<body>
+    <h1>Login</h1>
+    
+      <h1 >Open Door</h1>
+      <div class="imgcontainer">
+        <img src="image/open.jpg" alt="" class="avatar">
+      </div>
+
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="login()">Login</button>
+        <button type="button"  class="cancelbtn"><a href="index.html">Cancel</a>Cancel</button>
+    </form>
+
+    <script>
+        function login() {
+            
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "" || password === "") {
+                alert("Please enter both username and password.");
+                return;
+            }
+            if (username === "imayk" && password === "1234") {
+                alert("Login successful!");
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
