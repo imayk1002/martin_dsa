@@ -1,0 +1,40 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background: url();
+}
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ 
+}
+.text-box {
+    column-count: 1;
+}
+.newslorem{
+    column-count: 2;
+    margin-top: 50px;
+    padding: 20px;
+    resize: vertical;
+    overflow: auto;
+}
+.contact-in{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px #666;
+}
+.contact-form {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 45px;
+    
+}
