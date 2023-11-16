@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+
+# Get user input for an integer
+try:
+    user_input = int(input("Enter an integer: "))
+except ValueError:
+    print("Invalid input. Please enter a valid integer.")
+    exit()
+
+# Example plot using the user input
+x = range(user_input)
+y = [i**2 for i in x]
+
+plt.plot(x, y)
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title(f'Square of numbers up to {user_input}')
+plt.show()
