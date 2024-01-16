@@ -1,5 +1,5 @@
 body{
-    background: url(smoke6);
+   
     width: 100%;
     height: 100vh;
     font-family: sans-serif;
@@ -11,12 +11,20 @@ body{
     background: white;
     border-radius: 3px;
 }
+.login{
+    width: 360px;
+    height: 320px;
+    margin: auto;
+    background: white;
+    border-radius: 3px;
+}
 h1{
     text-align: center;
 }
 form{
     width: 300px;
     margin-left: 20px;
+    
 }
 form label{
     display: flex;
@@ -30,6 +38,7 @@ form input{
     border: 1px solid gray;
     border-radius: 6px;
     outline: none;
+    
 }
 input[type="submit"]{
     width: 320px;
@@ -44,4 +53,9 @@ input[type="submit"]{
 input[type="submit"]:hover{
     color: white;
    background: rgb(13, 211, );
+}
+.new {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2vh;
 }
